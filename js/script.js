@@ -321,6 +321,25 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Enhanced Scroll Reveal Animations
+    const revealObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('active');
+                revealObserver.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: '0px 0px -100px 0px'
+    });
+
+    // Observe elements with reveal classes
+    const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
+    revealElements.forEach(el => {
+        revealObserver.observe(el);
+    });
+
     // Intersection Observer for animations
     const animationObserver = new IntersectionObserver(function(entries) {
         entries.forEach(entry => {
@@ -339,6 +358,11 @@ document.addEventListener('DOMContentLoaded', function() {
                     setTimeout(() => {
                         entry.target.classList.add('animate-in');
                     }, Math.random() * 200);
+                }
+
+                // Special animation for section headers
+                if (entry.target.classList.contains('section-header')) {
+                    entry.target.classList.add('animate-header');
                 }
                 
                 animationObserver.unobserve(entry.target);
