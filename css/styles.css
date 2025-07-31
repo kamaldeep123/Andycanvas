@@ -410,7 +410,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Section Styling */
 .section-header {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .section-title {
@@ -441,14 +441,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Services Section */
 .services {
-    padding: 60px 0;
+    padding: 40px 0;
     background: var(--bg-light);
 }
 
 .services-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .service-card {
@@ -550,7 +550,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Gallery Section */
 .gallery {
-    padding: 60px 0;
+    padding: 40px 0;
     background: linear-gradient(180deg, var(--text-white) 0%, var(--bg-light) 50%, var(--text-white) 100%);
     position: relative;
 }
@@ -572,7 +572,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     flex-wrap: wrap;
 }
 
@@ -602,7 +602,7 @@ h1, h2, h3, h4, h5, h6 {
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 1.5rem;
+    gap: 1rem;
     position: relative;
 }
 
@@ -727,7 +727,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Process Section */
 .process {
-    padding: 60px 0;
+    padding: 40px 0;
     background: var(--bg-light);
 }
 
@@ -822,7 +822,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* About Section */
 .about {
-    padding: 60px 0;
+    padding: 40px 0;
 }
 
 .about-content {
@@ -932,14 +932,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Testimonials Section */
 .testimonials {
-    padding: 60px 0;
+    padding: 40px 0;
     background: var(--bg-light);
 }
 
 .testimonials-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
+    gap: 1rem;
 }
 
 .testimonial-card {
@@ -991,7 +991,7 @@ h1, h2, h3, h4, h5, h6 {
     background: var(--gradient-primary);
     color: var(--text-white);
     text-align: center;
-    padding: 60px 0;
+    padding: 40px 0;
     position: relative;
     overflow: hidden;
 }
@@ -1390,7 +1390,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .contact-section {
-    padding: 60px 0;
+    padding: 40px 0;
 }
 
 .contact-content {
@@ -1621,43 +1621,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-/* Video Showcase Styles */
-.video-showcase {
-    padding: 40px 0;
-    background: var(--bg-light);
-}
-
-.video-container {
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.video-container video {
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow-medium);
-    transition: var(--transition);
-}
-
-.video-container video:hover {
-    box-shadow: var(--shadow-heavy);
-    transform: translateY(-2px);
-}
-
-@media (max-width: 768px) {
-    .video-container video {
-        width: 100%;
-        height: auto;
-    }
-    
-    .video-showcase {
-        margin: 2rem 0;
-        padding: 2rem 1rem;
-    }
-    
-    .video-caption h3 {
-        font-size: 1.8rem;
-    }
-}
 
 /* Keyframe Animations */
 @keyframes fadeInUp {
